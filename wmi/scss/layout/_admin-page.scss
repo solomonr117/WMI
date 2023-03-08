@@ -1,0 +1,218 @@
+@use '../globals/colors' as c;
+@use '../globals/variables';  
+@use '../globals/typography';
+
+.admin_page_container{
+     min-height: 100vh;
+
+    &::before{
+        content: '';
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        position: absolute;
+        background-image: url('../images/background_img.jpg');
+        background-position:top center;
+        background-size:cover;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+
+   .admin_page__header{
+    
+    
+    .admin_page__nav{
+        width: 100% ;
+        display: flex;
+        flex-direction:row;
+        justify-content:space-between;
+        padding: 0.5em ;
+        font-size: 1.2rem;
+        transition: 0.5s east-out;
+        
+        
+        .admin_page__logo{
+            margin-top:auto;
+            margin-bottom:auto;
+          
+       
+        }
+
+        .admin_page__ul,.admin_page__list{
+            list-style-type:none;
+            display: inline-block;
+            padding:0.3em;
+            padding-right: 1rem;
+
+            & :hover{
+                // color: skyblue;
+                text-shadow: 5px 5px 10px gray;
+                transition: 0.5s ease-in-out;
+                font-size: 1.5rem;
+            }
+            
+        }
+    }  // nav bar 
+  }  // header
+
+.admin_content{
+    display: flex;
+    justify-content: space-around;
+    .admin_content_seller_table{
+        background-color: #0b29328a;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 1rem;
+        .seller_table_heading{
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+         }
+            .seller_table {
+                // border-collapse: collapse;
+                width: 50%;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                font-size: 1.1rem;
+
+              }
+              
+              th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+              }
+            
+              tr{
+                transition: 0.5s ease-in;
+            
+                &:hover{
+                  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+                    transition: 0.5s ease-in;
+                    font-size: 1.2rem;
+                }
+              }
+              .admin_page_seller_remove_btn{
+                    height: 1.5rem;
+                    border: none;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    outline: none;
+                    border-radius: 0.3rem;
+                    color: white;
+                    background-color:#1E6D85;
+                   transition: 0.5s ease-in;
+
+                    &:hover{
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+                        transition: 0.5s ease-in;
+ 
+                    }
+              }
+    }
+
+    .admin_content_buyer_table{
+        background-color: #0b29328a;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 1rem;
+        .buyers_table_heading{
+           display: flex;
+           justify-content: center;
+           font-size: 2rem;
+           margin-bottom: 1rem;
+        }
+        .buyer_table {
+            // border-collapse: collapse;
+            width: 50%;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            font-size: 1.1rem;
+
+          }
+          
+          th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+          }
+        
+          tr{
+            transition: 0.5s ease-in;
+        
+            &:hover{
+              background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+                transition: 0.5s ease-in;
+                font-size: 1.2rem;
+                
+            }
+          }
+          .admin_page_seller_remove_btn{
+                height: 1.5rem;
+                border: none;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                outline: none;
+                border-radius: 0.3rem;
+                color: white;
+                background-color:#1E6D85;
+               transition: 0.5s ease-in;
+
+                &:hover{
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    transition: 0.5s ease-in;
+
+                }
+          }
+}
+}
+
+
+.admin_page_contact_details{
+
+    margin-top: 3rem;
+    .contact_table_heading{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+  
+    .contact_table{
+        background-color: #0b29328a;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 1rem;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        font-size: 1.1;
+
+          }
+        
+          tr{
+            transition: 0.5s ease-in;
+        
+            &:hover{
+              background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+                transition: 0.5s ease-in;
+                font-size: 1.2rem;
+                
+            }
+          }
+       
+    }
+}
+
+
+
+
+
+}
